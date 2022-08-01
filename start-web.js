@@ -3,6 +3,7 @@ require("./src/server/index.ts")
 var express = require("express")
 
 let server = express()
+
 server.use(
   express.static('src/client', {
     setHeaders: function (res, path, stat) {
@@ -17,4 +18,5 @@ server.all('*', function(req, res){
 });
 
 server.listen(process.env.PORT || 5000)
+
 console.log('serving content on http://localhost:5000')
