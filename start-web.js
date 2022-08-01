@@ -3,9 +3,6 @@ require("./src/server/index.ts")
 var express = require("express")
 
 let server = express()
-
-//https://web.dev/coop-coep/
-//https://expressjs.com/en/api.html
 server.use(
   express.static('src/client', {
     setHeaders: function (res, path, stat) {
