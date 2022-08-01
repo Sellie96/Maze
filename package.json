@@ -1,11 +1,13 @@
 {
-  "name": "simmo",
+  "name": "mazeretro",
   "private": true,
   "version": "1.0.0",
+  "engines": {
+    "node": "16.14.2"
+  },
   "license": "MIT",
   "main": "start-desktop.js",
   "scripts": {
-    "build": "tsc",
     "start": "node start-web",
     "start:electron": "electron .",
     "start:electron-forge": "electron-forge start",
