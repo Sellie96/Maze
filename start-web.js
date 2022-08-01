@@ -16,5 +16,5 @@ server.all('*', function(req, res){
   res.sendfile("src/client/index.html");
 });
 
-server.listen(5000)
+server.listen(process.env.PORT || 5000)
 console.log('serving content on http://localhost:5000')
