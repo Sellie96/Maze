@@ -16,7 +16,7 @@ server.use(
   })
 )
 
-server.listen(process.env.PORT || 5000)
+server.listen(5000)
 console.log('serving content on http://localhost:5000')
 
 
